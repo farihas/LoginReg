@@ -1,0 +1,11 @@
+C:\Users\farih_000\DojoAssignments\CSharp\LoginReg\bin\Debug\netcoreapp2.0\LoginReg.deps.json
+C:\Users\farih_000\DojoAssignments\CSharp\LoginReg\bin\Debug\netcoreapp2.0\LoginReg.runtimeconfig.json
+C:\Users\farih_000\DojoAssignments\CSharp\LoginReg\bin\Debug\netcoreapp2.0\LoginReg.runtimeconfig.dev.json
+C:\Users\farih_000\DojoAssignments\CSharp\LoginReg\bin\Debug\netcoreapp2.0\LoginReg.dll
+C:\Users\farih_000\DojoAssignments\CSharp\LoginReg\bin\Debug\netcoreapp2.0\LoginReg.pdb
+C:\Users\farih_000\DojoAssignments\CSharp\LoginReg\obj\Debug\netcoreapp2.0\LoginReg.csprojResolveAssemblyReference.cache
+C:\Users\farih_000\DojoAssignments\CSharp\LoginReg\obj\Debug\netcoreapp2.0\LoginReg.csproj.CoreCompileInputs.cache
+C:\Users\farih_000\DojoAssignments\CSharp\LoginReg\obj\Debug\netcoreapp2.0\LoginReg.AssemblyInfoInputs.cache
+C:\Users\farih_000\DojoAssignments\CSharp\LoginReg\obj\Debug\netcoreapp2.0\LoginReg.AssemblyInfo.cs
+C:\Users\farih_000\DojoAssignments\CSharp\LoginReg\obj\Debug\netcoreapp2.0\LoginReg.dll
+C:\Users\farih_000\DojoAssignments\CSharp\LoginReg\obj\Debug\netcoreapp2.0\LoginReg.pdb

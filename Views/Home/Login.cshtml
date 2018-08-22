@@ -1,0 +1,54 @@
+@model User
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Successful Registration/Login Page</title>
+    <link rel="stylesheet" type="text/css" href="~/css/style.css"/>
+  </head>
+  
+  <body>
+    <br><br>
+    <div class='box'>
+      <h2>@ViewData["Message"] @Model.Id.</h2>
+      <hr><br>      
+
+      <form asp-action="Login" asp-controller="Home" method="POST">
+        <div class='info'>
+          <div class='row'>
+            <div class='col-40'>
+              <label asp-for="FirstName">First Name:</label>
+            </div>
+            <div class='col-60'>
+              @Model.FirstName
+            </div>
+          </div><br>
+
+          <div class='row'>
+            <div class='col-40'>
+              <label asp-for="LastName">Last Name:</label>
+            </div>
+            <div class='col-60'>
+              @Model.LastName
+            </div>
+          </div><br>
+
+          <div class='row'>
+            <div class='col-40'>
+              <label asp-for="Email">Email:</label>
+            </div> 
+            <div class='col-60'>
+              @Model.Email
+            </div>
+          </div><br>
+
+          <div class='row'>
+            <div class='col-60'>
+              <input class='button' type='button' value='Go Back' onclick="window.history.back()">
+            </div>
+          </div>        
+        </div>
+      </form>
+    </div> 
+  </body>
+</html>
