@@ -22,8 +22,7 @@ namespace LoginReg.Controllers
         [HttpGet]
         [Route("")]
         public IActionResult Index()
-        {
-            List<User> AllUsers = _dbContext.Users.ToList();
+        {            
             return View();
         }
 
@@ -35,7 +34,7 @@ namespace LoginReg.Controllers
             {
                 return View("Index", user);
             }
-            var test = _dbContext.Users.FirstOrDefault(u => u.Email == user.Email);
+            User test = _dbContext.Users.FirstOrDefault(u => u.Email == user.Email);
             // check if email already in db
             if (test != null)
             {
@@ -50,18 +49,22 @@ namespace LoginReg.Controllers
             _dbContext.SaveChanges();    // saving changes to db            
             ViewData["Message"] = "You were successfully registered as User ";  
             
-            // redirect to login page if the submission is valid                               
-            return RedirectToAction("login", user);
+            // redirect to success page if the submission is valid                               
+            return View("Success", user);
         }
 
-        [HttpGet("login")]
+        [HttpGet("success")]
+        public IActionResult Success(User user)
+        {
+            List<User> AllUsers = _dbContext.Users.ToList();
+            return View(user);
+        }
+        
         [HttpPost("login")] 
         public IActionResult Login(User user)
-        {   // TODO... var passwordHash = Hasher( user.Password);
-            
+        {   
             // check to see if user exists in db
-            //_dbContext.Lo //Users.Load();
-            var existingUser = _dbContext.Users.FirstOrDefault(u => u.Email == user.Email);
+            User existingUser = _dbContext.Users.FirstOrDefault(u => u.Email == user.Email);
 
             if (existingUser == null)  // If user not found
             {                
@@ -78,7 +81,7 @@ namespace LoginReg.Controllers
             }
             
             ViewData["Message"] = "You were successfully logged in as User ";  
-            return View("login", existingUser);
+            return View("Success", existingUser);
         }
 
         public IActionResult Error()
