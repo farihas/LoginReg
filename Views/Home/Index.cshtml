@@ -1,4 +1,4 @@
-﻿@{
+@{
     ViewData["Title"] = "Home Page";
 }
 
@@ -22,61 +22,61 @@
                     <!-- form asp-action will be a name of a method, instead of name of a route used with form action -->
                     <form asp-action="Register" asp-controller="Home" method="POST"> 
 
-                    <div class='row'>
-                        <div class='col-40'>                    
-                            <label asp-for="FirstName">First Name </label>
-                            <span style="color: red" asp-validation-for="FirstName"></span>
-                        </div>
-                        <div class='col-60'>
-                            <input type="text" asp-for="FirstName" placeholder="your first name">
-                        </div>
-                    </div><br>    
-
-                    <div class='row'>
-                        <div class='col-40'>                    
-                            <label asp-for="LastName">Last Name </label>
-                            <span style="color: red" asp-validation-for="LastName"></span>
-                        </div>
-                        <div class='col-60'>
-                            <input type="text" asp-for="LastName" placeholder="your last name">
-                        </div>
-                    </div><br> 
-
-                    <div class='row'>
-                        <div class='col-40'>                    
-                            <label asp-for="Email">Email </label>
-                            <span style="color: red" asp-validation-for="Email"></span>
-                        </div>
+                        <div class='row'>
+                            <div class='col-40'>                    
+                                <label asp-for="FirstName">First Name </label>
+                                <span style="color: red" asp-validation-for="FirstName"></span>
+                            </div>
                             <div class='col-60'>
-                            <input type="text" asp-for="Email" placeholder="a valid email">            
-                        </div>          
-                    </div><br>
+                                <input type="text" asp-for="FirstName" placeholder="your first name">
+                            </div>
+                        </div><br>    
 
-                    <div class='row'>
-                        <div class='col-40'>                    
-                            <label asp-for="Password">Password </label>
-                            <span style="color: red" asp-validation-for="Password"></span>
-                        </div>
+                        <div class='row'>
+                            <div class='col-40'>                    
+                                <label asp-for="LastName">Last Name </label>
+                                <span style="color: red" asp-validation-for="LastName"></span>
+                            </div>
                             <div class='col-60'>
-                            <input type="password" asp-for="Password" placeholder="at least 8 characters">            
-                        </div>          
-                    </div><br>
+                                <input type="text" asp-for="LastName" placeholder="your last name">
+                            </div>
+                        </div><br> 
 
-                    <div class='row'>
-                        <div class='col-40'>
-                            <label asp-for="PwConfirm">Confirm Password </label>
-                            <span style="color: red" asp-validation-for="PwConfirm"></span>
-                        </div>
+                        <div class='row'>
+                            <div class='col-40'>                    
+                                <label asp-for="Email">Email </label>
+                                <span style="color: red" asp-validation-for="Email"></span>
+                            </div>
+                                <div class='col-60'>
+                                <input type="text" asp-for="Email" placeholder="a valid email">            
+                            </div>          
+                        </div><br>
+
+                        <div class='row'>
+                            <div class='col-40'>                    
+                                <label asp-for="Password">Password </label>
+                                <span style="color: red" asp-validation-for="Password"></span>
+                            </div>
+                                <div class='col-60'>
+                                <input type="password" asp-for="Password" placeholder="at least 8 characters">            
+                            </div>          
+                        </div><br>
+
+                        <div class='row'>
+                            <div class='col-40'>
+                                <label asp-for="PwConfirm">Confirm Password </label>
+                                <span style="color: red" asp-validation-for="PwConfirm"></span>
+                            </div>
+                                <div class='col-60'>
+                                <input type="password" asp-for="PwConfirm" placeholder="retype password">            
+                            </div>          
+                        </div><br>        
+
+                        <div class='row'>
                             <div class='col-60'>
-                            <input type="password" asp-for="PwConfirm" placeholder="retype password">            
-                        </div>          
-                    </div><br>        
-
-                    <div class='row'>
-                        <div class='col-60'>
-                            <input class="button" type="submit" value="Register">
-                        </div>
-                    </div>        
+                                <input class="button" type="submit" value="Register">
+                            </div>
+                        </div>        
                     </form>
 
                 </td>
@@ -84,30 +84,30 @@
                     <!-- form asp-action will be a name of a method, instead of name of a route used with form action -->
                     <form asp-action="Login" asp-controller="Home" method="POST"> 
 
-                    <div class='row'>
-                        <div class='col-40'>                    
-                            <label asp-for="Email">Email </label>
-                            <span style="color: red" asp-validation-for="Email"></span>
-                        </div>
-                            <div class='col-60'>
-                            <input type="text" asp-for="Email" placeholder="your email">            
-                        </div>          
-                    </div><br>
-                    <div class='row'>
-                        <div class='col-40'>                    
-                            <label asp-for="Password">Password </label>
-                            <span style="color: red" asp-validation-for="Password"></span>
-                        </div>
-                            <div class='col-60'>
-                            <input type="password" asp-for="Password" placeholder="your password">            
-                        </div>          
-                    </div><br>
+                        <div class='row'>
+                            <div class='col-40'>                    
+                                <label asp-for="UserEmail">Email </label>
+                                <span style="color: red" asp-validation-for="UserEmail"></span>
+                            </div>
+                                <div class='col-60'>
+                                <input type="text" asp-for="UserEmail" placeholder="your email">            
+                            </div>          
+                        </div><br>
+                        <div class='row'>
+                            <div class='col-40'>                    
+                                <label asp-for="UserPassword">Password </label>
+                                <span style="color: red" asp-validation-for="UserPassword"></span>
+                            </div>
+                                <div class='col-60'>
+                                <input type="password" asp-for="UserPassword" placeholder="your password">            
+                            </div>          
+                        </div><br>
 
-                    <div class='row'>
-                        <div class='col-60'>
-                            <input class="button" type="submit" value="Login">
+                        <div class='row'>
+                            <div class='col-60'>
+                                <input class="button" type="submit" value="Login">
+                            </div>
                         </div>
-                    </div>
 
                     </form>
                 </td>
